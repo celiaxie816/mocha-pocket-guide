@@ -38,7 +38,8 @@ a { color: inherit; }
   backdrop-filter: blur(18px);
 }
 .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--espresso); font-weight: 700; text-decoration: none; }
-.brand-mark { display: grid; place-items: center; width: 35px; height: 35px; color: var(--milk); background: var(--espresso); border-radius: 50% 50% 45% 45%; font-family: "DM Serif Display", serif; font-size: 12px; letter-spacing: -1px; }
+.brand-mark { position: relative; display: block; width: 42px; height: 42px; overflow: hidden; flex: 0 0 auto; border: 1px solid rgba(59, 41, 35, 0.12); border-radius: 13px; background: #eee7dc; box-shadow: 0 5px 14px rgba(59, 41, 35, 0.16); }
+.brand-mark img { position: absolute; top: 50%; left: 50%; width: 120px; max-width: none; height: auto; transform: translate(-50%, -50%); }
 nav { display: flex; align-items: center; gap: 28px; font-size: 13px; font-weight: 600; }
 nav a { text-decoration: none; }
 .nav-cta { padding: 10px 16px; border: 1px solid var(--espresso); border-radius: 100px; }
